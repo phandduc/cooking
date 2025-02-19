@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Từ Điển Bánh</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #fff;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            padding: 20px;
+        }
+        h1 {
+            text-align: center;
+            color: #ff7e5f;
+        }
+        .search-box {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+        .dictionary {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+        .term {
+            flex: 1 1 calc(33.333% - 20px);
+            background: #f9f9f9;
+            padding: 15px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        .term h2 {
+            margin: 0 0 10px;
+            color: #333;
+        }
+        .back-button {
+            display: block;
+            width: 200px;
+            margin: 20px auto;
+            text-align: center;
+            padding: 10px;
+            background: #ff7e5f;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+        .back-button:hover {
+            background: #e6674b;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Từ Điển Bánh</h1>
+        <input type="text" class="search-box" placeholder="Tìm kiếm nguyên liệu...">
+        <div class="dictionary">
+            <div class="term">
+                <h2>Agar Agar</h2>
+                <p>Có nguồn gốc từ tảo biển, sử dụng như chất tạo đông.</p>
+            </div>
+            <div class="term">
+                <h2>Baking Powder</h2>
+                <p>Bột tạo nở giúp bánh xốp và mềm.</p>
+            </div>
+            <div class="term">
+                <h2>Chocolate</h2>
+                <p>Socola đen 75% cacao, dùng làm bánh và trang trí.</p>
+            </div>
+            <div class="term">
+                <h2>Men nở khô</h2>
+                <p>Men nở bánh mì dạng khô.</p>
+            </div>
+            <div class="term">
+                <h2>Whipping Cream</h2>
+                <p>Kem tươi có 35% fat, dùng để đánh bông trang trí bánh.</p>
+            </div>
+            <div class="term">
+                <h2>Gelatine</h2>
+                <p>Chất tạo đông có nguồn gốc từ collagen động vật được sử dụng rộng rãi trong ngành công nghệ thực phẩm, dược phẩm, nhiếp ảnh và mỹ phẩm</p>
+            </div>
+            <div class="term">
+                <h2>Hạnh nhân bột</h2>
+                <p>Hạnh nhanh xay mịn thường được trộn vào một số công thức bánh</p>
+            </div>
+            <div class="term">
+                <h2>Nugmet</h2>
+                <p>Nhục đậu khấu</p>
+            </div>
+            <div class="term">
+                <h2>Bột jelly</h2>
+                <p>Có nguồn gốc từ rong biển, sử dụng như một chất tạo đông giúp sản phẩm giòn và trong suốt</p>
+            </div>
+            <div class="term">
+                <h2>Bột mỳ đa dụng</h2>
+                <p>Bột mỳ có thể sử dụng vào nhiều mục đích</p>
+            </div>
+        </div>
+        <a href="index.html" class="back-button">⬅ Trở về màn hình chính</a>
+    </div>
+</body>
+</html>

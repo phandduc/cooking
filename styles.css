@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background-color: #f8f8f8;
+}
+.navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, #ff7e5f, #feb47b);
+    padding: 15px 20px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+.navbar a {
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    padding: 15px 25px;
+    transition: all 0.3s ease;
+    position: relative;
+    font-size: 18px;
+}
+.navbar a:hover {
+    color: #ffeaa7;
+}
+.menu-container {
+    position: relative;
+}
+.menu-dropdown {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: rgba(255, 255, 255, 0.98);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    padding: 15px;
+    min-width: 320px;
+}
+.menu-container:hover .menu-dropdown {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.menu-category {
+    background: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+.menu-category h4 {
+    margin: 0;
+    font-size: 16px;
+    color: #ff7e5f;
+}
+.menu-category ul {
+    list-style: none;
+    padding: 0;
+    margin: 5px 0 0;
+}
+.menu-category ul li {
+    padding: 5px 0;
+}
+.menu-category ul li a {
+    text-decoration: none;
+    color: #333;
+    font-size: 14px;
+}
+.menu-category ul li a:hover {
+    color: #ff7e5f;
+}
+.hero {
+    position: relative;
+    width: 100%;
+    height: 500px;
+    background: url('background-cooking.jpeg') no-repeat center center/cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.hero-text {
+    position: absolute;
+    text-align: center;
+    color: white;
+    background: rgba(0, 0, 0, 0.6);
+    padding: 20px;
+    border-radius: 10px;
+}
+.hero-text h1 {
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+.hero-text p {
+    font-size: 18px;
+}
+@media (max-width: 768px) {
+    .menu-dropdown {
+        position: static;
+        display: block;
+        width: 100%;
+        background: #fff;
+        box-shadow: none;
+    }
+    .menu-container:hover .menu-dropdown {
+        display: block;
+    }
+    .menu-category {
+        flex: 1 1 100%;
+        text-align: center;
+    }
+}
+.footer {
+    text-align: center;
+    padding: 20px;
+    background: #f4f4f4;
+    margin-top: 20px;
+}
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 20px;
+}
+.social-links a {
+    text-decoration: none;
+    color: #333;
+    font-size: 20px;
+}

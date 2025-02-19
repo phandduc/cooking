@@ -1,0 +1,11 @@
+<button onclick="saveRecipe('Tart trứng kiểu Bồ Đào Nha', 'Nguyên liệu: Trứng, sữa...')">
+    Lưu công thức
+</button>
+<script>
+    function saveRecipe(title, content) {
+    let savedRecipes = JSON.parse(localStorage.getItem("savedRecipes")) || [];
+    savedRecipes.push({ title, content });
+    localStorage.setItem("savedRecipes", JSON.stringify(savedRecipes));
+    alert("Đã lưu công thức!");
+}
+</script>
