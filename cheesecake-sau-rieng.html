@@ -4,82 +4,119 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Công thức Cheesecake Sầu Riêng</title>
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
-        
-        body {
-            font-family: 'Poppins', sans-serif;
-            background-color: #f8f1e4;
-            margin: 0;
-            padding: 0;
-            line-height: 1.8;
-        }
-        .navbar {
-            background-color: #333;
-            padding: 10px 0;
-            text-align: center;
-        }
-        .navbar a {
-            color: white;
-            text-decoration: none;
-            font-weight: 600;
-            padding: 14px 20px;
-            display: inline-block;
-            transition: 0.3s;
-        }
-        .navbar a:hover {
-            background-color: #d2691e;
-            border-radius: 5px;
-        }
-        .container {
-            max-width: 800px;
-            margin: auto;
-            background: #fff;
-            padding: 20px;
-            border-radius: 10px;
-            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-            margin-top: 20px;
-        }
-        h1 {
-            text-align: center;
-            color: #d2691e;
-            font-weight: 700;
-        }
-        .image {
-            text-align: center;
-        }
-        .image img {
-            width: 100%;
-            border-radius: 10px;
-        }
-        .section {
-            margin-top: 20px;
-        }
-        .ingredients, .instructions, .tip {
-            background: #fff8dc;
-            padding: 15px;
-            border-radius: 8px;
-        }
-        ul {
-            list-style-type: none;
-            padding: 0;
-        }
-        ul li::before {
-            content: "🍽️ ";
-        }
-        .button {
-            display: block;
-            width: 100%;
-            text-align: center;
-            margin-top: 15px;
-            padding: 10px;
-            background: #d2691e;
-            color: white;
-            text-decoration: none;
-            border-radius: 5px;
-            font-weight: 600;
-        }
-    </style>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Nunito+Sans:opsz,wght@6..12,200..1000&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+    
+    body {
+        font-family: 'Poppins', sans-serif;
+        background-color: #f8f1e4;
+        margin: 0;
+        padding: 0;
+        line-height: 1.8;
+    }
+    .navbar {
+        background-color: #333;
+        padding: 10px 0;
+        text-align: center;
+    }
+    .navbar a {
+        color: white;
+        text-decoration: none;
+        font-weight: 600;
+        padding: 14px 20px;
+        display: inline-block;
+        transition: 0.3s;
+    }
+    .navbar a:hover {
+        background-color: #d2691e;
+        border-radius: 5px;
+    }
+    .container {
+        max-width: 800px;
+        margin: auto;
+        background: #fff;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        margin-top: 20px;
+    }
+    h1 {
+        flex:1;
+        font-family: "Great Vibes";
+        font-size: 350%;
+        text-align: center;
+        color: #d2691e;
+    }
+    h2{
+        font-family: "Dancing Script";
+        font-size: 250%;
+        color: #d2691e;
+    }
+    strong{
+        font-family: "Dancing Script";
+        font-size: 190%;
+    }
+    .column {
+        flex: 1; 
+        background: #fdf4dc; 
+        padding: 15px;
+        border-radius: 8px;
+        box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+    }
+    .image {
+        text-align: center;
+    }
+    .image img {
+        width: 100%;
+        border-radius: 10px;
+    }
+    .section {
+        margin-top: 20px;
+    }
+    .ingredients{
+        background: #fff8dc;
+        display: flex;
+        gap: 20px;
+        justify-content: space-between;
+        padding: 15px;
+        border-radius: 8px;
+    }
+    .instructions{
+        padding: 15px;
+        border-radius: 8px;
+        background: #fff8dc;
+    }
+    .tip{
+        padding: 15px;
+        border-radius: 8px;
+        background: #fff8dc;
+    }
+    ul {
+        list-style-type: none;
+        padding: 0;
+    }
+    ul li::before {
+        content: "🍽️ ";
+    }
+    .button {
+        display: block;
+        width: 100%;
+        text-align: center;
+        margin-top: 15px;
+        padding: 10px;
+        background: #d2691e;
+        color: white;
+        text-decoration: none;
+        border-radius: 5px;
+        font-weight: 600;
+    }
+</style>
 </head>
 <body>
     <div class="navbar">
@@ -89,17 +126,20 @@
         <a href="#">Liên Hệ</a>
     </div>
     <div class="container">
-        <h1>Tiramisu Tart</h1>
+        <h1>Cheesecake Sầu Riêng</h1>
         <div class="image">
             <img src="saurieng.webp" alt="Cheesecake Sầu Riêng">
         </div>
         <div class="section ingredients">
             <h2>Nguyên liệu (1 bánh tròn đường kính 18cm)</h2>
+            <div class="column">
             <strong>Đế Bánh</strong>
             <ul>
                 <li>50g bơ chảy</li>
                 <li>130g bánh quy Oreo bỏ phần kem</li>
             </ul>
+        </div>
+            <div class="column">
             <strong>Cheese cake</strong>
             <ul>
                 <li>70g đường</li>
@@ -110,10 +150,13 @@
                 <li>8g bột gelatine</li>
                 <li>30g nước ấm</li>
             </ul>
+        </div>
+        <div class="column">
             <strong>Chuẩn bị</strong>
             <ul>
                 <li>Khuôn tròn 18cm, đế rời</li>
             </ul>
+        </div>
         </div>
         <div class="section instructions">
             <h2>Cách làm</h2>

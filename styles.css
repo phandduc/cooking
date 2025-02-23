@@ -1,8 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
-body {
+html, body {
     margin: 0;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
     font-family: 'Poppins', sans-serif;
     background-color: #f8f8f8;
+}
+.warpper{
+    flex:1;
 }
 .navbar {
     display: flex;
@@ -101,8 +107,10 @@ body {
 }
 @media (max-width: 768px) {
     .menu-dropdown {
-        position: static;
-        display: block;
+        position: absolute;
+        top: 100%; 
+        left: 0;
+        display: none;
         width: 100%;
         background: #fff;
         box-shadow: none;
@@ -113,6 +121,8 @@ body {
     .menu-category {
         flex: 1 1 100%;
         text-align: center;
+        max-width: 100%; 
+        overflow-x: hidden;
     }
 }
 .footer {
@@ -131,4 +141,111 @@ body {
     text-decoration: none;
     color: #333;
     font-size: 20px;
+}
+.footer {
+    background: #282c35;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.footer h2 {
+    margin-bottom: 10px;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.footer p {
+    font-size: 16px;
+    margin-bottom: 15px;
+}
+
+.footer textarea {
+    width: 80%;
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    resize: none;
+    font-size: 14px;
+}
+
+.footer button {
+    background: #ff5e57;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.footer button:hover {
+    background: #e74c3c;
+}
+
+.social-links {
+    margin-top: 15px;
+}
+
+.social-links a {
+    color: white;
+    margin: 0 10px;
+    text-decoration: none;
+    font-size: 18px;
+    transition: 0.3s;
+}
+
+.social-links a:hover {
+    color: #ff5e57;
+}
+
+.social-links i {
+    margin-right: 5px;
+}
+.food-slider {
+    position: relative;
+    width: 80%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+#food-suggestion-box {
+    width: 40%;
+    background: #FFE5CC;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.5s ease-in-out;
+}
+
+.food-box img {
+    width: 100%;
+    max-width: 350px;
+    border-radius: 10px;
+}
+
+.food-box h3 {
+    margin: 10px 0;
+    color: #ff7e5f;
+}
+
+button {
+    background: #ff5e57;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    font-size: 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: #e74c3c;
 }
