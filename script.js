@@ -54,20 +54,3 @@ document.addEventListener("DOMContentLoaded", function () {
         updateFoodSuggestion();
     }, 4000);
 });
-document.addEventListener("DOMContentLoaded", function () {
-    const menuContainer = document.querySelector(".menu-container");
-    const menuButton = document.querySelector(".menu-button"); // Nút mở menu
-
-    // Sự kiện click vào nút menu
-    menuButton.addEventListener("click", function (event) {
-        event.stopPropagation(); // Ngăn sự kiện lan ra ngoài
-        menuContainer.classList.toggle("active"); // Bật/tắt menu
-    });
-
-    // Sự kiện click bên ngoài menu để đóng
-    document.addEventListener("click", function (event) {
-        if (!menuContainer.contains(event.target)) {
-            menuContainer.classList.remove("active"); // Đóng menu nếu bấm ra ngoài
-        }
-    });
-});
