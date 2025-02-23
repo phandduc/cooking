@@ -54,3 +54,4 @@ document.addEventListener("DOMContentLoaded", function () {
         updateFoodSuggestion();
     }, 4000);
 });
+

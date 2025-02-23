@@ -10,7 +10,7 @@
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background: #fff;
+            background: #fdf4dc; 
         }
         .container {
             width: 80%;
@@ -108,5 +108,21 @@
         </div>
         <a href="index.html" class="back-button">⬅ Trở về màn hình chính</a>
     </div>
+    <script>
+document.querySelector(".search-box").addEventListener("keyup", function () {
+    let searchQuery = this.value.toLowerCase();
+    let terms = document.querySelectorAll(".dictionary .term");
+
+    terms.forEach(term => {
+        let termTitle = term.querySelector("h2").textContent.toLowerCase();
+        if (termTitle.includes(searchQuery)) {
+            term.style.display = "block";
+        } else {
+            term.style.display = "none";
+        }
+    });
+});
+
+    </script>
 </body>
 </html>
